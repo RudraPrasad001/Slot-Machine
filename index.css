@@ -1,16 +1,20 @@
 body{
-    background:url("https://wallpapers.com/images/hd/casino-background-lrkfoca5xmm2llax.jpg")
-        no-repeat
-    ;
-    background-position: center c;
-    background-size: cover;
     color: whitesmoke;
     text-decoration: dotted black;
+    background:url("Backdrop.png")
+    no-repeat
+;
+background-position: center c;
+background-size: cover;
+
 }
+
 #rules{
+    
     background-color: rgba(0,0,0,0.7);
     font-size: 20px;
     text-align: center;
+    border-radius: 10px;
 }
 ul{
     list-style-type: none;
@@ -26,25 +30,49 @@ li{
     background-color: rgba(56, 55, 55, 0.633);
     text-align: center;
     border-radius: 50px;
+    overflow: hidden;
+
 }
 .slot{
+    float: left;
     line-height: -30%;
-    display: inline;
-    font-size: 50px;
+    display: block;
+    font-size: 500%;
     border: 5px solid black;
     padding: 10px;
-    margin-left: 10%;
+    margin-left: 5%;
     background-color: rgba(101, 143, 132, 0.755);
     border-radius: 20%;
+    height: 50%;
+    width: 10%;    
+}
+.win{
+    background-color: goldenrod;
 }
 #slot1{
-    margin-left: 1%;
+    
+    margin-left: 23%;
+}
+.anim1{
+    animation-name: rolling1;
+    animation-duration:0.5s ;
+}
+.anim2{
+    animation-name: rolling2;
+    animation-duration:0.7s ;
+}
+
+.anim3{
+
+    animation-name: rolling3;
+    animation-duration:0.9s ;
+
 }
 #roll{
-    font-size: 50px;
+    font-size: 350%;
     cursor: pointer;
-    margin-top: 5%;
-    margin-left: 50%;
+    margin-left: 48%;
+
 }
 #roll:hover{
     background-color: rgb(174, 174, 174);
@@ -53,7 +81,7 @@ li{
 }
 #result{
     background-color: black;
-    margin-left: 30%;
+    margin-left: 45%;
     font-size: 200%;
     text-align: center;
     border: 5px solid black;
@@ -61,13 +89,13 @@ li{
     display: inline;
 }
 #headingg{
-    background-color: black;
-    margin-left: 30%;
+ 
+    
+    background-color: rgba(0, 0, 0, 0.8);
     font-size: 200%;
-    text-align: center;
-    border: 5px solid black;
     border-radius: 5px;
-    display: inline;
+    text-align: center;
+    
 }
 #try{
     background-color: black;
@@ -77,4 +105,14 @@ li{
     border: 5px solid black;
     border-radius: 5px;
     display: inline;
+}
+
+@keyframes rolling1{
+    from{transform: translateY(-500%);}
+}
+@keyframes rolling2{
+    from{transform: translateY(-300%);}
+}
+@keyframes rolling3{
+    from{transform: translateY(-300%);}
 }
